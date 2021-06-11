@@ -5,8 +5,8 @@ let vapIdKeys={
   }//push.generateVAPIDKeys();
 console.log(vapIdKeys)
 
-push.setVapidDetails("Test",vapIdKeys.publicKey,vapIdKeys.privateKey)
+push.setVapidDetails("mailto:soaadabdelaziz@gmail",vapIdKeys.publicKey,vapIdKeys.privateKey)
 
-let sub={"endpoint":"https://fcm.googleapis.com/fcm/send/exFN9JnqpDg:APA91bEduL_vRbp-nuIoI_RBU-gVHBsrADRic8fle-s1DyMQdjbLdio3l3JsAweuNhwAcXVEJmWSAWIUU7O9R8FFFNFp-AUc58CdLu_28xQd6z0hMGu894RNuBwpBVhvHMcHBZhEk9QB","expirationTime":null,"keys":{"p256dh":"BF9AmQhnsbLBk9XGAePW6dTmCBzsq8dR2UmttR8_rPG1VvxVVF-igE3TMwHpZxkR0VK5phYCQ0m-hc0Tl1oj7K8","auth":"1fPlR51xQiVelKgVnHyO2g"}}
+let sub={"endpoint":"https://fcm.googleapis.com/fcm/send/d5CQfK9aLyc:APA91bE08Wk5a7kkg4rqg1AAZmszg-GOlRdqPBQeLEXBO7bhZ8p6zwT9Bn3zQl2xjS3iY-TpPhnrdZ-7LikbTDb15bX5Oz1MsoBDLNQYfRWwu8K-vJl3wVus_w8gAHuaVGyxNIKpjD4S","expirationTime":null,"keys":{"p256dh":"BBv7llISFflli9SnbEa1NdH_HUkROjBnWxOaBmDGR_SNVGfIVEYQVhY2Mc5TVhtVqGrt0cdAryZcSit66oGxta4","auth":"ObMvAOAmwrTaerrSR_cPRA"}}
 
 push.sendNotification(sub,'Test Message')
